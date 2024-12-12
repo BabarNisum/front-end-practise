@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+
+} 
+.navbar{
+  background-color: black;
+ height: 50px;
+   display: flex;
+  justify-content: center;
+}
+#imgbr{
+height: 40px;
+float: left;
+/* margin-right: 150px; */
+}
+
+.navbar a{
+    font-size: xx-large;
+    background-color: rgb(54, 54, 104);
+   text-align: center;
+    padding: 5px 15px;
+    border-radius: 15px;
+    color: white;
+     margin: 4px;
+
+}
+
+.navbar a:hover{
+    background-color: rgb(240, 74, 9);
+    color: white;
+  }
+
+
+
+#form{
+    width: 50%;
+    height: 50%;
+    border: 3px;
+    background-color: rgb(112, 112, 204);
+}
+body{
+    background-color: rgb(167, 214, 214);
+ 
+}
+
+h1{
+translate: 50px;
+    margin-bottom: 20px;
+    /* text-align: center; */
+}
+.margin{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+#adress1{
+    margin-left: 35%;
+}
+#search1{
+        float: right;
+        margin-top: 10px;
+        margin-left: 250px;
+      
+}

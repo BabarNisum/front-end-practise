@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+table{
+  translate: 25%;
+  justify-content: center;
+  display: flex;
+  border-collapse: collapse;
+   text-align: center; 
+}
+table th{
+  text-align: center;
+  background-color: blue;
+}
+table th:hover{
+  background-color: green;
+  color: white;
+}
+a{
+  margin-top: 200px;
+  margin: 25%;
+}

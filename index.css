@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(172, 206, 206);
+}
+.navbar{
+  background-color: black;
+ height: 50px;
+   display: flex;
+  justify-content: center;
+}
+#imgbr{
+height: 40px;
+float: left;
+/* margin-right: 150px; */
+}
+
+.navbar a{
+    font-size: xx-large;
+    background-color: rgb(54, 54, 104);
+   text-align: center;
+    padding: 5px 15px;
+    border-radius: 15px;
+    color: white;
+     margin: 4px;
+
+}
+
+.navbar a:hover{
+    background-color: rgb(240, 74, 9);
+    color: white;
+  }
+
+#heading{
+    background-color: blue;
+text-align: center;
+}
+searchbar{
+float: left;
+margin-top: 30px;
+}
+form{
+  float: right;
+  margin-top: 17px;
+  margin-left: 300px;
+}

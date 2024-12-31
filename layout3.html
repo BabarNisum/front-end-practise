@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: gray;
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        .mainhead {
+            position: sticky;
+            top: 0px; 
+            
+        }
+
+        .navbar {
+            width: 100%;
+            height: 80px;
+            background-color: green;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* padding: 20px 30px; */
+            box-shadow: inset 5px 5px 10px black;
+
+        }
+
+        .logo {
+            font-size: 30px;
+            text-decoration: underline;
+            text-shadow: 5px 5px 8px black;
+        }
+
+        .logo span {
+            color: blue;
+            font-size: 35px;
+            display: inline-block;
+
+        }
+
+        .logo span::first-letter {
+
+            font-size: 40px;
+            font-weight: bolder;
+        }
+
+        .menu ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            font-size: xx-large;
+            font-weight: bold;
+
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+
+
+        }
+
+        .search-bar {
+            width: 150px;
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        .search-bar:hover {
+            background-color: red;
+            color: white;
+
+            transition: 0.4s ease-in;
+        }
+
+        ul li:hover {
+            background-color: red;
+        }
+
+        .right img {
+            width: 45%;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px black;
+            margin-right: 10px;
+            margin-top: 10px;
+            float: right;
+
+        }
+
+        .section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 45%;
+            margin-top: 150px;
+            float: left;
+        }
+
+        .section button {
+            margin-top: 10px;
+            width: 80px;
+            height: 30px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .section button:hover {
+            background-color: green;
+        }
+
+        p {
+            font-size: 30px;
+            font-weight: bolder;
+        }
+
+        h1 span {
+            color: blue;
+
+        }
+
+        .footer_container {
+            width: 100%;
+            height: 200px;
+            /* padding: 20px; */
+            background-color: rgb(194, 182, 182);
+            position: relative;
+            top: 500px;
+            display: inline-block;
+        }
+
+        .boxes_container {
+            width: 100%;
+            height: 200px;
+            background-color: lightgray;
+            display: inline-block;
+            position: relative;
+            top: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .containt {
+            width: 22%;
+            height: 150px;
+            margin-top: 10px;
+            background-color: rgb(36, 22, 22);
+            color: white;
+            border-radius: 10px;
+            box-shadow: inset 5px 8px 10px black;
+
+        }
+
+        .first_span {
+            color: blue;
+        }
+
+        #box1_text {
+            color: white;
+            font-weight: normal;
+            font-size: 16px;
+            padding: 8px;
+        }
+
+        p {
+            display: flex;
+            justify-content: center;
+        }
+
+        p span {
+            color: blue;
+            display: flex;
+            justify-content: center;
+        }
+
+        .containerheadr {
+            width: 100%;
+            height: 100px;
+            background-color: red;
+            color: black;
+          
+        }
+    </style>
+</head>
+
+<body>
+    <header class="mainhead">
+        <nav class="navbar">
+            <div class="logo">Design <span>Babar</span></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Prtfolio</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <span>Search:</span><input type="text" class="search-bar" placeholder="Search Here...">
+        </nav>
+
+    </header>
+    <section class="section">
+        <div class="left">
+            <p class="firstp"> I am a </p>
+            <h1>Frontend Deve <span>loper</span></h1>
+            <p>Student And Business <span>Man</span></p>
+
+            <button><a href="#">Cleck Me</a></button>
+        </div>
+    </section>
+    <div class="right"><img src="laptop.jpg" alt=""> </div>
+
+
+    <div class="boxes_container">
+        <div class="containt">
+            <span class="first_span">Exercise</span><span
+                style="color: green; font-weight: bold; text-decoration: underline;"> Routine</span>
+            <p id="box1_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremque repellat voluptate eum cupiditate corporis
+                fuga est autem quia, sit sed!</p>
+        </div>
+        <div class="containt">
+            <span class="first_span">Gym trainer </span><span id="bio"
+                style="color: green; font-weight: bold; text-decoration: underline;">Bio</span>
+            <p style="font-weight: normal; font-size: large; padding: 10px;">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="containt">
+            <span class="first_span">Timing </span><span
+                style="color: green; font-weight: bold; text-decoration: underline;">Schedule</span>
+            <p style="font-weight: normal;">Morning:9:00Am
+                <br>
+                <span>To</span>
+            <p>11:00Am</p>
+            </p>
+        </div>
+    </div>
+
+
+
+    <div class="containerheadr"> babar ali</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

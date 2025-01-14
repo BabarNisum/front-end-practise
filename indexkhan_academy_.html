@@ -19,6 +19,7 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+
         }
 
         .header a {
@@ -66,10 +67,7 @@
             align-items: center;
         }
 
-        .container_txt {
-            /* padding: 60px;
-            margin-top: 70px; */
-        }
+
 
         .text {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -95,8 +93,8 @@
             justify-content: center;
             align-items: center;
             margin-left: 10px;
-            float: left;
             cursor: pointer;
+            float: left;
         }
 
         .grid_container {
@@ -112,30 +110,29 @@
 
         #Heading_second_part {
             text-align: center;
+            margin-top: 120px;
         }
 
         .cotainerimgandtext {
-            /* display: grid;
-            grid-template-columns: 33.33% 33.33% 33.33% ;
-            grid-template-rows: 300px;
-            padding: 20px;
-            margin-top: 30px;
-            gap: 20px; */
-            /* width: 96%;  */
+            width: 95%;
+            height: 500px;
+            /* background-color: red; */
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             padding: 20px;
         }
 
-        .container-imgandtext {
+        .imges_three {
+            width: 200px;
+        }
+
+        /* .container-imgandtext {
             display: flex;
             justify-content: space-around;
             align-items: center;
             margin-top: 100px;
-        }
-
-        #Diffrentite {}
+        } */
 
         #imgees {
             width: 30%;
@@ -233,14 +230,7 @@
         .human_d_p {
             margin-top: 10px;
             width: 100%;
-
             background-color: rgb(245, 242, 242);
-            /* display: grid;
-            grid-template-columns: 1fr 2fr;
-            grid-template-rows: 1fr; */
-            /* display: flex;
-            justify-content: center;
-            align-items: center; */
         }
 
         .human_d {
@@ -268,11 +258,6 @@
             /* background-color: red; */
         }
 
-        .main_c .child_img_txt {
-            /* background-color: green; */
-
-        }
-
         #chance_box a {
             width: 150px;
             height: 50px;
@@ -295,15 +280,21 @@
 
         .second_last_container {
             width: 100%;
-            margin-top: 150px;
+            height: 400px;
+            margin-top: 300px;
             background-color: rgb(241, 239, 239);
-            height: 600px;
-            margin-top: 100px;
+        }
+
+        #h {
+            /* background-color: red; */
+            text-align: center;
+            padding: 20px;
         }
 
         #four_boxes {
             display: flex;
             justify-content: center;
+            align-items: center;
         }
 
         #four_boxes ul {
@@ -385,18 +376,11 @@
         .grid_containeer {
             width: 100%;
             height: 800px;
-            /* background-color: blue; */
-            /* background: linear-gradient to bottom right,
-                rgba(255, 99, 71, 0.8), 
-                rgba(30, 144, 255, 0.8), 
-                rgba(34, 139, 34, 0.6) 
-           background: linear-gradient(blue, black, purple,); */
             background-color: #0b2149;
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 1fr;
             grid-template-rows: repeat(15, 1fr);
             gap: 10px;
-            /* padding-left: 40px; */
             margin-top: 50px;
 
         }
@@ -451,8 +435,10 @@
         .logo_making {
             width: 100%;
             height: 400px;
-            /* background-color: red; */
+            display: flex;
+            flex-wrap: wrap;
         }
+
 
         .key_sup {
             width: 100%;
@@ -469,6 +455,15 @@
             width: 130px;
             margin-left: 100px;
             margin-bottom: 100px;
+        }
+
+        .container-imgandtext {
+            display: flex;
+
+        }
+        .imgez{
+            width: 100px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -497,21 +492,21 @@
     <h1 id="Heading_second_part">Why Khan Academy Wroks</h1>
 
     <div class="cotainerimgandtext">
-        <div style="width: 33%;" class="img,1">
-            <img src="personalized_learning_icon.png" alt="">
+        <div>
+            <img class="imges_three" src="personalized_learning_icon.png" alt="">
             <h2>Personalized learning</h2>
             <p>Student practice at their own pace, first filling in <br> gaps in their understanding and then
                 accelerating <br>their learning</p>
         </div>
-        <div style="width: 33%;" class="img,2">
-            <img src="trusted_content_icon.png" alt="">
+        <div class="img,2">
+            <img class="imges_three" src="trusted_content_icon.png" alt="">
             <h2>Tursted content</h2>
             <p>Created by experts, Babar Academy's libary of <br> trusted practice and lessons covers math, science,
                 <br> and more. Always free for learners and teachers.
             </p>
         </div>
-        <div style="width: 33%; margin-top: 40px;" class="img,3">
-            <img src="empower_teachers_icon.png" alt="">
+        <div class="img,3">
+            <img class="imges_three" src="empower_teachers_icon.png" alt="">
             <h2>Tools to empower teachers</h2>
             <p>With Babar Academy,teachers can identify gaps in <br>their students' understanding, tailor instuction,
                 and <br>meet the needs of every student.</p>
@@ -572,7 +567,7 @@
         </div>
     </div>
     <div class="second_last_container">
-        <h1 id="h" style="text-align: center; ">Join Babar Academy Today</h1>
+        <h1 id="h">Join Babar Academy Today</h1>
         <div id="four_boxes">
             <ul>
                 <li><a id="btn1" href="#">Learner</a></li>
@@ -632,13 +627,13 @@
         <div class="grid_box"><a href="#">prees</a></div>
         <div class="grid_box"><a href="#">Math:get ready course</a></div>
         <div class="grid_box"><a href="#">our leadr ship</a></div>
-        <div class="grid_box download_b"><a href="#">Download our Apps</a></div>
+        <div class="grid_box"><a href="#">Download our Apps</a></div>
         <div class="grid_box"><a href="#">Test prep</a></div>
         <div class="grid_box"><a href="#">Others supporters</a></div>
-        <div class="grid_box"></div>
+        <div class="grid_box"><img class="imgez" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?releaseDate=1331424000" alt=""></div>
         <div class="grid_box"><a href="#"> science</a></div>
         <div class="grid_box"><a href="#">Our contributers</a></div>
-        <div class="grid_box"></div>
+        <div class="grid_box"><img class="imgez" src="https://cdn.kastatic.org/images/store-badges/google-play/en.png" alt=""></div>
         <div class="grid_box"><a href="#">Computing</a></div>
         <div class="grid_box"><a href="#">Our financing</a></div>
         <div class="grid_box"><a href="#">Arts & Humanities</a></div>

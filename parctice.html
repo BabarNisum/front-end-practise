@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?auto=compress&cs=tinysrgb&w=400);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .navbar {
+            background-color: #333;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        .nav-list li {
+            margin: 0 15px;
+        }
+
+        .nav-list a {
+            color: white;
+            font-size: 16px;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .nav-list a:hover {
+            background-color: #4CAF50;
+        }
+
+        .logo {
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            font-size: x-large;
+            font-weight: bolder;
+
+        }
+
+        .logo span {
+            color: blue;
+        }
+
+        .par {
+            background-color: white;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            padding: 20px;
+            width: 20%;
+            height: 500px;
+            border-radius: 10px;
+
+        }
+
+        #boxp {
+            position: absolute;
+            top: 120px;
+            left: 4px;
+            
+            
+          
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#">Home </a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <p class="logo">Babar <span>Ali</span></p>
+    <div id="boxp">
+        <p class="par">Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Perspiciatis illo quia natus illum tenetur reprehenderit
+            . Sed optio sequi aut esse amet dolorum impedit, nostrum sapiente ullam!
+            Placeat, eos voluptates. Laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ab.</p>
+    </div>
+
+
+    
+</body>
+
+</html>

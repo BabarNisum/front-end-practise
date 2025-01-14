@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+</head>
+<style>
+    /* * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    } */
+
+
+    body {
+        font-family: Arial, sans-serif;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4;
+    }
+
+    .header {
+        width: 100%;
+        height: 50px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #0b1041;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+
+    .header a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        
+    }
+
+    .header a:hover {
+        text-decoration: underline;
+
+    }
+
+    #Search {
+        width: 200px;
+        height: 30px;
+        border-radius: 10px;
+        transition: transform 3s ease-in-out;
+    }
+
+    #Search:hover {
+        background-color: blue;
+        color: white;
+        transform: scale(1.1);
+    }
+
+    .header .Signup {
+        background-color: blue;
+        width: 80px;
+        height: 30px;
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .grid_container {
+        display: grid;
+        grid-template-columns: 40% 60%;
+
+    }
+
+    .signup-box {
+        width: 300px;
+        padding: 20px;
+        margin-top: 60px;
+        background-color: white;
+        border-radius: 10px;
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+        box-shadow: 0px 10px 10px rgb(48, 43, 43);
+        /* float: left; */
+    }
+
+    .signup-box h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: blue;
+    }
+
+    .signup-box input {
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .signup-box button {
+        width: 100%;
+        padding: 10px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+
+    }
+
+    .signup-box button:hover {
+        background-color: darkblue;
+    }
+
+    .signup-box p {
+        text-align: center;
+        margin-top: 10px;
+        color: #555;
+    }
+
+    .signup-box p a {
+        color: blue;
+        text-decoration: none;
+    }
+
+    .signup-box p a:hover {
+        text-decoration: underline;
+    }
+
+    .grid_container {
+        grid-column: 1fr;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: 10px;
+        margin-top: 10px;
+        margin-right: 30px;
+    }
+
+    .rightside img {
+        margin: auto;
+
+    }
+
+    input:focus {
+        outline: 1px solid blue;
+        box-shadow: 1px 2px 10px rgba(0, 0, 255, 0.7);
+    }
+
+    .grid_containeer {
+        width: 100%;
+        height: 800px;
+        background-color: #0b2149;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(15, 1fr);
+        gap: 10px;
+        /* padding-left: 40px; */
+
+
+    }
+
+
+
+    .grid_box1 {
+        grid-row: 1/3;
+    }
+
+    .grid-box2 {
+        grid-row: 3/15;
+    }
+
+    .download_b {
+        justify-self: center;
+
+    }
+
+    .grid_containeer a {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+
+    }
+
+    .grid_containeer a:hover {
+        text-decoration: underline;
+    }
+
+    #Donate {
+        color: white;
+        cursor: pointer;
+
+    }
+
+    #Donate:hover {
+        text-decoration: underline;
+
+    }
+
+    #volunteer {
+        color: white;
+        cursor: pointer;
+    }
+
+    #volunteer:hover {
+        text-decoration: underline;
+
+    }
+
+    #s_last {
+        position: relative;
+        top: -50px;
+
+    }
+</style>
+
+<body>
+    <nav class="header">
+        <a href="#">Explore</a>
+        <input type="text" name="searchbar" id="Search" placeholder="Search">
+        <a href="index khan_academy_.html">Khan Academy</a>
+        <a href="#">Donate</a>
+        <a href="sign_in.html">Log in</a>
+        <a href="signup.html" class="Signup">Sign Up</a>
+    </nav>
+    <div class="grid_container">
+        <div class="main_b">
+            <!-- singn_up_Box -->
+            <div class="signup-box">
+                <h2>Sign Up</h2>
+                <form>
+                    <input id="firstname" type="text" name="usser name" maxlength="10" placeholder="Full Name">
+                    <input type="email" name="usser name" placeholder="Email Address">
+                    <input type="password" name="password" placeholder="Password">
+                    <input type="password" name="password" placeholder="confirm password">
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p>Already have an account? <a href="#">Log In</a></p>
+            </div>
+        </div>
+        <div class="rightside">
+            <img style="width: 80%; height: 80%;"
+                src="data:image/jpeg;base64,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"
+                alt="">
+            <div id="s_last">
+                <h1>join Babar Academy to</h1>
+                <h1>Active your learning</h1>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="grid_containeer">
+        <div class="grid_box grid_box1">
+            <p style="margin-left: 30px; font-size: 25px; color: lightgray;">Our misstion is to provide a free. <br>
+                World class aducation
+                to anyone,
+                anywhere.</p>
+        </div>
+
+        <div class="grid_box"><a href="#">Abount</a></div>
+        <div class="grid_box"><a href="#">Contact</a></div>
+        <div class="grid_box"><a href="#">Course</a></div>
+        <div class="grid_box"><a href="#">News</a></div>
+        <div class="grid_box"><a href="#">Help center</a></div>
+        <div class="grid_box"><a href="#">Math,pakistan grads</a></div>
+        <div class="grid_box grid-box2">
+            <p style="margin-left: 30px; font-size: 20px; color: lightgray;">Babar Academy is a 501(C)(3)noneprofit
+                <br>organization
+                <span id="Donate">Donate</span>
+                or
+                <span id="volunteer">volunteer</span>
+                today!
+            </p>
+            <img style="width: 300px; margin-left: 50px;" src="math-unicorn-donate-collage.png" alt="">
+
+            <h1 style="text-align: center; color: lightgray;">Creatid by Babar Ali </h1>
+        </div>
+        <div class="grid_box"><a href="#">Ipact</a></div>
+        <div class="grid_box"><a href="#">Support Cummunity</a></div>
+        <div class="grid_box"><a href="#">Sciences, pakistan grads</a></div>
+        <div class="grid_box"><a href="#">Our team</a></div>
+        <div class="grid_box"><a href="#">Share your store</a></div>
+        <div class="grid_box"><a href="#">U.S.Math pre-k-8th grade</a></div>
+        <div class="grid_box"><a href="#">our interns</a></div>
+        <div class="grid_box"><a href="#">prees</a></div>
+        <div class="grid_box"><a href="#">Math:get ready course</a></div>
+        <div class="grid_box"><a href="#">our leadr ship</a></div>
+        <div class="grid_box download_b"><a href="#">Download our Apps</a></div>
+        <div class="grid_box"><a href="#">Test prep</a></div>
+        <div class="grid_box"><a href="#">Others supporters</a></div>
+        <div class="grid_box"></div>
+        <div class="grid_box"><a href="#"> science</a></div>
+        <div class="grid_box"><a href="#">Our contributers</a></div>
+        <div class="grid_box"></div>
+        <div class="grid_box"><a href="#">Computing</a></div>
+        <div class="grid_box"><a href="#">Our financing</a></div>
+        <div class="grid_box"><a href="#">Arts & Humanities</a></div>
+        <div class="grid_box"><a href="#">Careers</a></div>
+        <div class="grid_box"><a href="#">Economics</a></div>
+        <div class="grid_box"><a href="#">Internships</a></div>
+        <div class="grid_box"><a href="#">Readings & language Arts</a></div>
+        <div class="grid_box"><a href="#">Cookie prefrences</a></div>
+        <div class="grid_box"><a href="#">Life skills</a></div>
+        <div class="grid_box"><a href="#">Partner courses</a></div>
+        <div class="grid_box"><a href="#">Babar for educators</a></div>
+
+    </div>
+</body>
+
+</html>

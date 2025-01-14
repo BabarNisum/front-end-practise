@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            width: 100%;
+            height: 50px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .header a {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .header a:hover {
+            text-decoration: underline;
+
+        }
+
+        #Search {
+            width: 200px;
+            height: 30px;
+            border-radius: 10px;
+        }
+
+        #Search:hover {
+            background-color: blue;
+            color: white;
+        }
+
+        .header .Signup {
+            background-color: blue;
+            width: 80px;
+            height: 30px;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .grid_container {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            /* grid-template-rows: ; */
+        }
+
+        .main_b {
+            margin-top: 100px;
+            margin-left: 10px;
+            /* display: flex;
+    justify-content: right; */
+
+        }
+
+        .log_in {
+            width: 30%;
+            height: 400px;
+            background-color: rgb(223, 215, 215);
+            padding: 20px;
+            margin: 10px 20px;
+            box-shadow: 5px 8px 10px rgb(158, 156, 156);
+            /* float: left; */
+            border-radius: 10px;
+        }
+
+        .log_in h2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: blue;
+            font-size: 30px;
+            font-weight: bolder;
+            text-align: center;
+
+        }
+
+        .log_in input {
+            width: 70%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            /* border: 1px solid black; */
+            margin-left: 30px;
+
+        }
+
+        #login {
+            display: inline-block;
+            width: 70%;
+            padding: 10px;
+            border-radius: 5px;
+            margin-left: 30px;
+            background-color: blue;
+            text-align: center;
+            color: white;
+            border: 1px solid black;
+            transition: background-color 0.5s ease;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        #login:hover {
+            background-color: green;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .log_in {
+            float: left;
+        }
+
+        .img_container {
+            width: 60%;
+            height: 500px;
+            /* background-color: red; */
+            float: left;
+        }
+
+        #image_lap {
+            border-radius: 10px;
+            margin-top: 30px;
+            margin-left: 20px;
+            box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.5);
+            transition: transform 2s ease-in-out;
+        }
+
+        #image_lap:hover {
+            transform: scale(1.1);
+        }
+
+
+        .grid_containeer {
+        width: 100%;
+        height: 800px;
+        background-color: #0b2149;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(15, 1fr);
+        gap: 10px;
+        /* padding-left: 40px; */
+
+
+    }
+
+
+
+    .grid_box1 {
+        grid-row: 1/3;
+    }
+
+    .grid-box2 {
+        grid-row: 3/15;
+    }
+
+    .download_b {
+        justify-self: center;
+
+    }
+
+    .grid_containeer a {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+
+    }
+
+    .grid_containeer a:hover {
+        text-decoration: underline;
+    }
+
+    #Donate {
+        color: white;
+        cursor: pointer;
+
+    }
+
+    #Donate:hover {
+        text-decoration: underline;
+
+    }
+
+    #volunteer {
+        color: white;
+        cursor: pointer;
+    }
+
+    #volunteer:hover {
+        text-decoration: underline;
+
+    }
+
+    #s_last {
+        position: relative;
+        top: -50px;
+
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="header">
+        <a href="#">Explore</a>
+        <input type="text" name="searchbar" id="Search" placeholder="Search">
+        <a href="index khan_academy_.html">Khan Academy</a>
+        <a href="#">Donate</a>
+        <a href="sign_in.html">Log in</a>
+        <a href="signup.html" class="Signup">Sign Up</a>
+    </nav>
+
+
+
+    <div class="log_in">
+        <h2>Log In</h2>
+        <form>
+            <input type="text" name="usser name" placeholder="Full Name">
+            <input type="email" name="usser name" placeholder="Email Address">
+            <input type="email" name="email" placeholder="Email...">
+            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="password" placeholder="confirm password">
+        </form>
+        <a id="login" href="#">Log in</a>
+        <p>Already have an account? <a href="#">Log In</a></p>
+    </div>
+    <div class="img_container">
+        <img id="image_lap" style="width: 700px;"
+            src="https://media.istockphoto.com/id/1456782892/photo/secure-access-to-personal-information-of-network-users-data-protection-and-secured-internet.jpg?s=612x612&w=0&k=20&c=weaG_pDAqqCqX5o2o07E6bJUeTkOq6qij7KxcC6IyGQ="
+            alt="images">
+    </div>
+    <div class="grid_containeer">
+        <div class="grid_box grid_box1">
+            <p style="margin-left: 30px; font-size: 25px; color: lightgray;">Our misstion is to provide a free. <br>
+                World class aducation
+                to anyone,
+                anywhere.</p>
+        </div>
+
+        <div class="grid_box"><a href="#">Abount</a></div>
+        <div class="grid_box"><a href="#">Contact</a></div>
+        <div class="grid_box"><a href="#">Course</a></div>
+        <div class="grid_box"><a href="#">News</a></div>
+        <div class="grid_box"><a href="#">Help center</a></div>
+        <div class="grid_box"><a href="#">Math,pakistan grads</a></div>
+        <div class="grid_box grid-box2">
+            <p style="margin-left: 30px; font-size: 20px; color: lightgray;">Babar Academy is a 501(C)(3)noneprofit
+                <br>organization
+                <span id="Donate">Donate</span>
+                or
+                <span id="volunteer">volunteer</span>
+                today!
+            </p>
+            <img style="width: 300px; margin-left: 50px;" src="math-unicorn-donate-collage.png" alt="">
+
+            <h1 style="text-align: center; color: lightgray;">Creatid by Babar Ali </h1>
+        </div>
+        <div class="grid_box"><a href="#">Ipact</a></div>
+        <div class="grid_box"><a href="#">Support Cummunity</a></div>
+        <div class="grid_box"><a href="#">Sciences, pakistan grads</a></div>
+        <div class="grid_box"><a href="#">Our team</a></div>
+        <div class="grid_box"><a href="#">Share your store</a></div>
+        <div class="grid_box"><a href="#">U.S.Math pre-k-8th grade</a></div>
+        <div class="grid_box"><a href="#">our interns</a></div>
+        <div class="grid_box"><a href="#">prees</a></div>
+        <div class="grid_box"><a href="#">Math:get ready course</a></div>
+        <div class="grid_box"><a href="#">our leadr ship</a></div>
+        <div class="grid_box download_b"><a href="#">Download our Apps</a></div>
+        <div class="grid_box"><a href="#">Test prep</a></div>
+        <div class="grid_box"><a href="#">Others supporters</a></div>
+        <div class="grid_box"></div>
+        <div class="grid_box"><a href="#"> science</a></div>
+        <div class="grid_box"><a href="#">Our contributers</a></div>
+        <div class="grid_box"></div>
+        <div class="grid_box"><a href="#">Computing</a></div>
+        <div class="grid_box"><a href="#">Our financing</a></div>
+        <div class="grid_box"><a href="#">Arts & Humanities</a></div>
+        <div class="grid_box"><a href="#">Careers</a></div>
+        <div class="grid_box"><a href="#">Economics</a></div>
+        <div class="grid_box"><a href="#">Internships</a></div>
+        <div class="grid_box"><a href="#">Readings & language Arts</a></div>
+        <div class="grid_box"><a href="#">Cookie prefrences</a></div>
+        <div class="grid_box"><a href="#">Life skills</a></div>
+        <div class="grid_box"><a href="#">Partner courses</a></div>
+        <div class="grid_box"><a href="#">Babar for educators</a></div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aqua;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .contianer {
+            /* display: flex;
+        justify-content: center; */
+        }
+
+        .logo {
+            width: 95%;
+            height: 60px;
+            background-color: gray;
+            margin: auto;
+            margin-top: 5px;
+            text-align: center;
+
+
+        }
+
+        .header {
+            background-color: gray;
+            width: 95%;
+            height: 80px;
+            margin-top: 5px !important;
+            margin: auto;
+            text-align: center;
+        }
+
+        .entrotxtarea {
+            background-color: gray;
+            width: 95%;
+            height: 40px;
+            margin-top: 5px !important;
+            margin: auto;
+            text-align: center;
+
+        }
+
+        .boxes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .firstchild {
+            width: 30%;
+            height: 400px;
+            background-color: green;
+            /* margin-left: 1.6%; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+
+        .second-child {
+            width: 30%;
+            height: 400px;
+            background: linear-gradient(to right, red 20%, yellow 50%, green 80%);
+            /* background:linear-gradient(to right, red ,blue,green,yellow,aqua); */
+            margin-left: 2.5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+
+        .Third-child {
+            width: 30%;
+            height: 400px;
+            background-color: gray;
+            margin-left: 2.5%;
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+
+        .footer {
+            width: 95%;
+            height: 40px;
+            background-color: gray;
+            margin: auto;
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        .Third-child:hover {
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            transform: rotate(45deg);
+            background: linear-gradient(to left, red, blue, yellow, green, blue);
+        }
+
+        .Third-child span:hover {
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contianer">
+        <div class="logo">Logo </div>
+        <div class="header">Header/Banner</div>
+        <div class="entrotxtarea">Entro TextArea</div>
+    </div>
+
+    <div class="boxes">
+        <div class="firstchild">Box1</div>
+        <div class="second-child">Box2</div>
+        <div class="Third-child"><span>Box3</span></div>
+    </div>
+    <div class="footer">Footer</div>
+</body>
+
+</html>

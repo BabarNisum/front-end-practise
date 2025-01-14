@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aqua;
+}
+
+.navbar {
+    width: 80%;
+    height: 80px;
+    /*dono trf se  space degra */
+    margin: 0 auto;
+    background-color: black;
+
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    float: left;
+    /* display: inline; */
+    width: 200px;
+    font-size: 32px;
+    /* border: 2px solid red; */
+    text-align: center;
+
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 80px;
+
+}
+.navbar ul li a:hover{
+    background-color: green;
+display: block;
+}

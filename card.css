@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ body {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    width: 244px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.capsuls {
+    padding: 0 14px;
+}
+
+.capsuls span {
+    border-radius: 2px solid black;
+    padding: 2px;
+
+}
+
+.containt {
+    padding: 13px; 
+}
+
+a {
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+a h3 {
+
+    border: 2px solid black; 
+    border-radius: 5px;
+    background-color: gray;
+    background-color: light gray;
+    width: 100px;
+    /* position: relative;
+    left: 47px;
+    top: 20px; */
+   
+} 
+.divp p{ padding: 5px;
+color: gray;
+font-weight: bold;
+}

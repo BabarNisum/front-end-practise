@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+        .main {
+            width: 50%;
+            height: 400px;
+            background-color: green;
+            border: 1px solid black;
+            border-radius: 5px;
+
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 1s ease-in-out;
+            float: left;
+            margin-left: 10px;
+        }
+
+        .box1:hover {
+            transform: rotate(345deg);
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(73, 12, 12);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+            margin-left: 10px;
+
+        }
+
+        .box2:hover {
+            transition: transform 1s ease-in-out;
+            transform: translate(50px, 100px);
+        }
+
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(41, 19, 19);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 100px;
+
+        }
+
+        .box3:hover {
+            transform: scale(2);
+        }
+
+        .skew {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(233, 236, 4);
+
+        }
+
+        .skew:hover {
+            transform: skew(30deg);
+        }
+
+        .scale {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+
+
+        }
+
+        .scale:hover {
+            transform: scale(3);
+        }
+
+        .translate {
+            width: 50%;
+            height: 70px;
+            background-color: gold;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-bottom: 10px;
+               }
+    .translate:hover{
+        transition: transform 2s ease-in;
+            /* transform: translate(340px); */
+           
+
+    }
+    </style>
+</head>
+
+<body>
+    <div class="translate">Translate</div>
+    <div class="main">
+        <div class="box1">
+            <h2>box1</h2>
+        </div>
+        <div class="box2">
+            <h2>box2</h2>
+        </div>
+        <div class="box3">box3</div>
+        <div class="skew">box4</div>
+
+    </div>
+    <div class="scale">box5(sclae)</div>
+</body>
+
+</html>
